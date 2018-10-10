@@ -17,13 +17,17 @@ from __future__ import print_function
 import logging
 import sys
 
-from flask import Flask, send_file, send_from_directory
+from flask import Flask, send_file, send_from_directory, render_template
 
 app = Flask(__name__, static_url_path='')
 
-@app.route('/images/<path:fname>')
+@app.route('/static/<path:fname>')
 def download_file(fname):
-    return send_from_directory('images', fname)
+    return send_from_directory('static', fname)
+
+@app.route('/console')
+def console():
+	return render_template('console.html')
 
 @app.route('/api')
 def api_call():
@@ -31,10 +35,9 @@ def api_call():
     return 'foo'
 
 @app.route('/')
-def hello():
-#	return 'Hello Ham'
+def home():
     print('ROOT!', file=sys.stderr)
-    return send_file('index.html')
+    return render_template('index.html')
 
 
 @app.errorhandler(500)

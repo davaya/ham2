@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-image: url("will-africano-1084943-unsplash-a.jpg");
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-color: #10101c;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#bg, #text {
+    position: absolute;
+    top: 150px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#bg {
+    background-color: #304060;
+    opacity: 0.5;
+    border-radius: 15px;
+    border: solid lightblue 1px;
+}
+
+#text {
+    overflow-y: hidden;
+    color: greenyellow;
+}
+
+#home {
+	background-color: #304060;
+	background-image: linear-gradient(#406080, #304060);
+	color: antiquewhite;
+	border: solid lightblue 1px;
+	border-radius: 30px;
+	position: relative;
+	top: 150px;
+	left: 10vh;
+	width: 800px;
+	padding: 30px;
+	padding-top: 0;
+}
+
+#actuator {
+	width: 700px;
+	background-color: lightsteelblue;
+	border-radius: 10px;
+}
+
+a:link, a:visited, a:active {
+	color: lightblue;
+}
+
+a:hover {
+	color: skyblue;
+}
+
+
+hr { border: none; border-top: 1px solid lightgray; }
+nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
+nav h1 { flex: auto; margin: 0; }
+nav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
+nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }

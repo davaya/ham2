@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Ham</title>
-</head>
+{% extends 'base.html' %}
 
-<body id="home">
-<h1>Ham <img src='/images/ham120.png' alt='ham' /></h1>
+{% block header %}
+  <h1>{% block title %}Ham Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div id="home">
+<h1>Ham <img src='/static/ham120.png' alt='ham' /></h1>
 
 <p><strong>"Hello World" Actuator for OpenC2 Messaging</strong></p>
 
@@ -18,5 +18,7 @@ end-to-end without modification regardless of the transport protocol, while maki
 message-related capabilities provided by each transport protocol.</p>
 
 <p>Connect to the server from an OpenC2 message client at <a href='/api'>/api</a>.</p>
-</body>
-</html>
+<p>Monitor message activity on the server <a href='/console'>console</a>.</p>
+<img id="actuator" src='/static/ham-actuator.png'/>
+</div>
+{% endblock %}
