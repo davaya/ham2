@@ -9,13 +9,13 @@ body {
 #container {
     height: 100vh;
     width: 100%;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
 }
 
 #bg, #text {
     position: absolute;
-    top: 150px;
+    top: 50px;
     bottom: 50px;
     left: 50px;
     right: 50px;
@@ -42,7 +42,7 @@ body {
 	border: solid lightblue 1px;
 	border-radius: 30px;
 	position: relative;
-	top: 150px;
+	top: 50px;
 	left: 10vh;
 	width: 800px;
 	padding: 30px;
@@ -65,7 +65,7 @@ a:hover {
 
 
 hr { border: none; border-top: 1px solid lightgray; }
-nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
+nav { background: #203040; display: flex; align-items: center; padding: 0 0.5rem; }
 nav h1 { flex: auto; margin: 0; }
 nav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
 nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
