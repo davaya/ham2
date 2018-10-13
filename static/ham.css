@@ -7,9 +7,10 @@ body {
 }
 
 #container {
-    height: 100vh;
+    position: relative;
+    height: calc(100vh - 40px);
     width: 100%;
-    position: absolute;
+    top: 0;
     box-sizing: border-box;
 }
 
@@ -36,21 +37,22 @@ body {
 }
 
 #home {
+	position: relative;
+	top: 50px;
+	left: 50px;
+	width: 800px;
 	background-color: #304060;
 	background-image: linear-gradient(#406080, #304060);
 	color: antiquewhite;
 	border: solid lightblue 1px;
 	border-radius: 30px;
-	position: relative;
-	top: 50px;
-	left: 10vh;
-	width: 800px;
 	padding: 30px;
 	padding-top: 0;
 }
 
 #actuator {
 	width: 700px;
+	margin-top: 10px;
 	background-color: lightsteelblue;
 	border-radius: 10px;
 }
@@ -61,6 +63,11 @@ a:link, a:visited, a:active {
 
 a:hover {
 	color: skyblue;
+}
+
+url {
+	color: skyblue;
+	font-weight: bold;
 }
 
 

@@ -8,8 +8,6 @@
 <div id="home">
 <h1>Ham <img src='/static/ham120.png' alt='ham' /></h1>
 
-<p><strong>"Hello World" Actuator for OpenC2 Messaging</strong></p>
-
 <p>A stub server demontrating the content- and transport-agnostic OpenC2 Message interface.</p>
 
 <p>A <em>message</em> is a logical unit consisting of domain-specific content plus an accompanying set of
@@ -17,8 +15,11 @@ domain-independent fields.  The purpose of this code is to show that a message i
 end-to-end without modification regardless of the transport protocol, while making use of the
 message-related capabilities provided by each transport protocol.</p>
 
-<p>Connect to the server from an OpenC2 message client at <a href='/api'>/api</a>.</p>
-<p>Monitor message activity on the server <a href='/console'>console</a>.</p>
-<img id="actuator" src='/static/ham-actuator.png'/>
+<h3>Usage:</h3>
+<ol>
+<li>Go to <a href='/console'>console</a> to monitor message activity on the server.</li>
+<li>Connect to the server from an OpenC2 Producer at <span id="url">{{ url_for('api_call', _external=True) }}</span>.</li>
+</ol>
+<img id="actuator" src='/static/ham-actuator.png'/ alt="diagram">
 </div>
 {% endblock %}
